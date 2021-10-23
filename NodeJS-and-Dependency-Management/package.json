@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-and-dependency-management",
+  "version": "1.0.0",
+  "description": "This is a task for a module called NodeJS and Dependency Management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "task",
+    "nodeJS",
+    "npm"
+  ],
+  "author": "Anastasia Streltsova",
+  "license": "ISC",
+  "devDependencies": {
+    "fs-extra": "^10.0.0"
+  }
+}
