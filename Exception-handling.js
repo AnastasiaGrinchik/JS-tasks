@@ -5,7 +5,7 @@ try {
     console.log(a);
     let a = 3;
 } catch (err) {
-    alert('let перед использованием нужно объявить');
+    console.log('let перед использованием нужно объявить');
 }
 
 try {
@@ -15,5 +15,5 @@ try {
         throw new Error('На ноль делить нельзя.');
     }
 } catch (err) {
-    alert('Ошибка! ' + err.message);
+    console.log('Ошибка! ' + err.message);
 }
