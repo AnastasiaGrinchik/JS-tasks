@@ -116,7 +116,7 @@ console.log(getIndex(arrOfNumbers, 7));
 
 //8. ﻿Реализовать цикл, который будет выводить число а, пока оно не станет меньше 10
 
-do while (a < 10) {
+for (let a = 20; a >= 10; a--) {
 	console.log(a);
 }
 
@@ -126,27 +126,31 @@ do while (a < 10) {
 
 //9. Реализовать цикл, который выводит в консоль простые числа
 
-function CheckOnSimple(num) {
+function isPrimeNumber(num) {
     let numberSimple = num;
     let isSimple = true;
-    for (let i = 2; i < numberSimple; i++) {
-        if (numberSimple % i == 0) {
-            isSimple = false;
-            break;
-        }
+    if (num > 1) {
+        for (let i = 2; i < numberSimple; i++) {
+            if (numberSimple % i == 0) {
+                isSimple = false;
+                break;
+            }
+        }   return isSimple;   
+    } else {
+        isSimple = false;
     }
-    return isSimple;
+
 }
 
-function simpleNumbers(arr) {
+function isSimpleNumbers(arr) {
     arr.forEach((item) => {
-        if (CheckOnSimple(item)) {
+        if (isPrimeNumber(item)) {
             console.log(item);
         }
     });
 }
 
-simpleNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16]);
+isSimpleNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16]);
 
 
 
