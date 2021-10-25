@@ -3,29 +3,29 @@
 
 // 1-й способ
 
-class Animal {
+class animal_ {
     constructor(move) {
         this.move = true;
     }
 }
 
-class Cat extends Animal {}
+class cat_ extends animal_ {}
 
-let animal = new Animal();
-let cat = new Cat();
+let animal = new animal_();
+let cat = new cat_();
 
 console.log(cat.move);
 
 // 2-й способ
 
-let Animal = {
+let animal = {
     move: true,
 };
 
-function Cat(name) {
+function cat_(name) {
     this.name = name;
 }
-Cat.prototype = Animal;
+cat_.prototype = animal;
 
-var cat = new Cat('Garfild');
+var cat = new cat_('Garfild');
 console.log(cat.move);
